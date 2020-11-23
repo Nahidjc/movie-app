@@ -53,6 +53,7 @@ const App = () => {
       (favouite) => favouite.imdbID !== movie.imdbID
     )
     setFavourites(newFavouriteList);
+    saveToLocalStorage(newFavouriteList);
   }
   return (
 
